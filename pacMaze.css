@@ -1,0 +1,29 @@
+#outer{
+    position: fixed;
+    inset: 0;
+}
+
+#outer:hover #mazeCanvas {
+    display:block;
+    /* clip-path: ellipse(30px 30px at var(--x) var (--y)); */
+}
+
+#mazeCanvas {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    
+    display: none;
+}
+
+#maze {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
